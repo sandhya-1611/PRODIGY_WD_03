@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: url(gradient-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.game-info{
+    color: #fff;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10rem;
+    border: 1px solid rgb(255, 255, 255,0.25);
+    padding: 0.5rem 3rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255,0.15);
+}
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgb(255, 255, 255,0.15);  
+    border-radius: 1rem;
+    border: 1px solid rgb(255, 255, 255,0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    
+}
+#box1,#box2,#box4,#box5{
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+#box7,#box8{
+    border-right: 2px solid #fff;
+}
+#box3,#box6{
+    border-bottom: 2px solid #fff;
+}
+
+.btn{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255,0.15);  
+    border-radius: 1rem;
+    border: 1px solid rgb(255, 255, 255,0.25);
+    display: none;
+}
+.active{
+    display: block;
+}
+
+.win{
+    background-color: rgba(0,255,0,0.3);
+}
